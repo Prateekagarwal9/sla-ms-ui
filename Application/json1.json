@@ -1,0 +1,1 @@
+{"name": "SparkPi Python job", "new_cluster": {"name": "test", "spark_version": "5.4.x-conda-scala2.11", "node_type_id": "Standard_DS3_v2", "num_workers": 1, "init_scripts": [{"dbfs": {"destination": "dbfs:/databricks1/init/test/installation1.sh"}}]}, "notebook_task": {"notebook_path": "/Prophet"}}

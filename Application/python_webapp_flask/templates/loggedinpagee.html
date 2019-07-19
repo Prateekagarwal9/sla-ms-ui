@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <head>
+    <!-- These meta tags come first. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <title>Bootstrap Theme Example</title>
+
+    <!-- Include the CSS -->
+    <link href="../static/v4/docs/assets/css/toolkit-inverse.css" rel="stylesheet">
+
+    <link href="../static/v4/docs/assets/css/application.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="iconav">
+  <a class="iconav-brand" href="loggedinpage.php">
+    <img src="../static/celbw.png" width="69" length="69"></img>
+  </a>
+  <div class="iconav-slider">
+    <ul class="nav nav-pills iconav-nav flex-md-column">
+
+      <li class="nav-item ">
+        <a class="nav-link active" href="loggedinpage.php" title="Overview" data-toggle="" data-placement="right" data-container="body">
+          <span class="icon icon-home"></span>
+
+
+          <small class="iconav-nav-label hidden-md-up">Overview</small>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<div class="container">
+   <div class="docs-header" id="content">
+  <div class="dashhead">
+    <div class="dashhead-titles">
+
+
+    </div>
+
+   </div>
+ </div>
+   <div id="error"</div>
+
+
+
+        <form method="post" >
+          <h4> App Service Details  <span class="icon icon-flash"></span></h4>
+          <div id = "error"></div>
+        <hr class="my-4">
+        <div class="form-row">
+           <div class="form-group col-md-4">
+             <label for="inputEmail4">App Service Name</label>
+
+
+             <input type="text" class="form-control" id="appservicename" name="name" required  placeholder="App Service Name">
+           </div>
+           <div class="form-group col-md-4">
+
+             <label for="inputEmail4">App Service URL</label>
+
+
+             <input type="text" class="form-control" id="appurl" name="name" required  placeholder="App Service URL">
+           </div>
+
+         </div>
+         <hr>
+         <br>
+
+          <h4> Data Factory Details  <span class="icon icon-flash"></span></h4>
+        <hr class="my-4">
+              <div class="form-row">
+                 <div class="form-group col-md-4">
+
+                   <label for="inputEmail4">Data Factory Name</label>
+                   <input type="text" class="form-control" id="datafactoryname" name="name" required  placeholder="Data Factory Name">
+                 </div>
+
+
+                 <div class="form-group col-md-4">
+                   <label for="inputEmail4">Data Factory Location</label>
+                 <select class="custom-select" id="dflocation">
+                   <option selected>Open this select menu</option>
+                   <option value="eastus">East-US</option>
+                   <option value="westus">West-US</option>
+                   <option value="centralus">Central-US</option>
+                 </select>
+
+               </div>
+             </div>
+             <div class="form-row">
+             <div class="form-group col-md-4">
+               <label for="inputEmail4">Table Name</label>
+               <input type="text" class="form-control" id="tablename" name="name" required  placeholder="Data Factory Name">
+             </div>
+           </div>
+               <br>
+                 <hr class="my-4">
+                   <h4> Storage Account Details  <span class="icon icon-flash"></span></h4>
+             <hr class="my-4">
+                 <div class="form-row">
+                 <div class="form-group col-md-4">
+                   <label for="inputEmail4">Storage Account Name</label>
+
+                   <input type="text" class="form-control" id="accountname" name="email"  required placeholder="Storage Account Name">
+                 </div>
+                 <div class="form-group col-md-4">
+                   <label for="inputEmail4">Access Key</label>
+
+                   <input type="text" class="form-control" id="accesskey" name="email"  required placeholder="Access Key">
+                 </div>
+                </div>
+                 <div class="form-row">
+                   <div class="form-group col-md-4">
+                     <label for="inputEmail4">Storage Account Connection String</label>
+
+                     <input type="text" class="form-control" id="connectstring" name="email"  required placeholder="Connection String">
+                   </div>
+                   </div>
+                <br>
+                <hr class="my-4">
+                <h4> SQL Server Details  <span class="icon icon-flash"></span></h4>
+                <hr class="my-4">
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">SQL Server Name</label>
+                 <input type="text" class="form-control" required id="servername" name="password"   placeholder="SQL server name">
+                </div>
+                <div class="form-group col-md-4">
+                 <label for="inputPassword4">Username</label>
+                 <input type="text" class="form-control" id="sqlusername" name ="cpassword" required placeholder="Username">
+
+                </div>
+
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">Password</label>
+                 <input type="password" class="form-control" required id="sqlpass" name="password"   placeholder="Password">
+                </div>
+                <div class="form-group col-md-4">
+                 <label for="inputPassword4">Database Name</label>
+                 <input type="text" class="form-control" id="dbname" name ="cpassword" required placeholder="Database Name">
+
+                </div>
+
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">SQL Server Connection String</label>
+                 <input type="password" class="form-control" required id="sqlcon" name="password"   placeholder="Connection String">
+                </div>
+
+
+                </div>
+                <br>
+                <hr>
+                <h4>Databricks Details</h4>
+              <hr>
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">Databricks Name</label>
+                 <input type="text" class="form-control" required id="databricksname" name="password"   placeholder="Databricks Name">
+                </div>
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">Access Token</label>
+                 <input type="text" class="form-control" required id="accesstoken" name="password"   placeholder="Access Token">
+                </div>
+
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                   <label for="inputEmail4">Workspace URL</label>
+                   <input type="text" class="form-control" required id="workspaceurl" name="password"   placeholder="Workspace URL">
+                  </div>
+                </div>
+
+              <br>
+              <hr>
+              <h4>Power BI Details</h4>
+            <hr>
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">Power BI Embedded</label>
+                 <input type="text" class="form-control" required id="powerbiname" name="password"   placeholder="Power BI Embedded">
+                </div>
+
+
+                <div class="form-group col-md-4">
+                 <label for="inputEmail4">Power BI Admin</label>
+                 <input type="text" class="form-control" required id="powerbiadmin" name="password"   placeholder="Power BI Admin">
+                </div>
+              </div>
+
+
+              <br>
+              <hr>
+              <h4>Key Vault Details</h4>
+            <hr>
+            <div class="form-row">
+            <div class="form-group col-md-4">
+             <label for="inputEmail4">Key vault Name</label>
+             <input type="text" class="form-control" required id="keyvaultname" name="password"   placeholder="Key Vault name">
+            </div>
+            <div class="form-group col-md-4">
+             <label for="inputEmail4">Key vault Location</label>
+             <select class="custom-select" id="keyvaultlocation">
+               <option selected>Open this select menu</option>
+               <option value="eastus">East-US</option>
+               <option value="westus">West-US</option>
+               <option value="centralus">Central-US</option>
+             </select>
+            </div>
+
+          </div>
+          <br>
+          <hr>
+          <h4>Subsciption Details</h4>
+        <hr>
+        <div class="form-row">
+        <div class="form-group col-md-4">
+         <label for="inputEmail4">Subscription ID</label>
+         <input type="text" class="form-control" required id="subid" name="password"   placeholder="Subsciption Id">
+        </div>
+        <div class="form-group col-md-4">
+         <label for="inputEmail4">Tenant ID</label>
+         <input type="text" class="form-control" required id="tenid" name="password"   placeholder="Tenant Id">
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-4">
+       <label for="inputEmail4">Client Id</label>
+       <input type="text" class="form-control" required id="clientid" name="password"   placeholder="Client Id">
+      </div>
+      <div class="form-group col-md-4">
+       <label for="inputEmail4">Client Secret</label>
+       <input type="text" class="form-control" required id="clientsecret" name="password"   placeholder="Client Secret">
+      </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-4">
+       <label for="inputEmail4">Resource Group</label>
+       <input type="text" class="form-control" required id="resourcegroup" name="password"   placeholder="Resource Group">
+      </div>
+      <div class="form-group col-md-4">
+       <label for="inputEmail4">Resource Group Location</label>
+       <select class="custom-select" id="rglocation">
+         <option selected>Open this select menu</option>
+         <option value="eastus">East-US</option>
+         <option value="westus">West-US</option>
+         <option value="centralus">Central-US</option>
+       </select>
+      </div>
+      </div>
+      <hr>
+      <h4>Azure Function Details</h4>
+    <hr>
+    <div class="form-row">
+    <div class="form-group col-md-4">
+     <label for="inputEmail4">Azure Function URL</label>
+     <input type="text" class="form-control" required id="azurefunction" name="password"   placeholder="Azure Function URL">
+   </div>
+    </div>
+
+                 <div class="form-row ">
+                 <div class="form-group col-md-4">
+                 </br>
+                   <button type="button" class="btn btn-primary"name="submit" onclick="callCurrentTemp()" >Submit <span class="icon icon-share-alternative"></span></button>
+
+
+                 </div>
+
+                </div>
+
+
+
+        </form>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+var callCurrentTemp = function() {
+  var appservicename = document.getElementById("appservicename").value
+  var appurl = document.getElementById("appurl").value
+  var datafactoryname = document.getElementById("datafactoryname").value
+  var accountname = document.getElementById("accountname").value
+  var accesskey = document.getElementById("accesskey").value
+  var connectstring = document.getElementById("connectstring").value
+  var servername = document.getElementById("servername").value
+  var sqlusername = document.getElementById("sqlusername").value
+  var sqlpass = document.getElementById("sqlpass").value
+  var dbname = document.getElementById("dbname").value
+  var databricksname = document.getElementById("databricksname").value
+  var accesstoken = document.getElementById("accesstoken").value
+  var workspaceurl = document.getElementById("workspaceurl").value
+  var powerbiname = document.getElementById("powerbiname").value
+  var powerbiadmin = document.getElementById("powerbiadmin").value
+  var keyvaultname = document.getElementById("keyvaultname").value
+  var subid = document.getElementById("subid").value
+  var tenid = document.getElementById("tenid").value
+  var clientid = document.getElementById("clientid").value
+  var clientsecret = document.getElementById("clientsecret").value
+  var resourcegroup = document.getElementById("resourcegroup").value
+  var sqlcon = document.getElementById("sqlcon").value
+  var dflocation = document.getElementById("dflocation").value
+  var azurefunction = document.getElementById("azurefunction").value
+  var tablename = document.getElementById("tablename").value
+  var keyvaultlocation = document.getElementById("keyvaultlocation").value
+  var rglocation = document.getElementById("rglocation").value
+  // console.log(dflocation)
+  // console.log(appservicename)
+  // console.log(appurl)
+  // console.log(datafactoryname)
+  // console.log(accountname)
+  accesskey=encodeURIComponent(accesskey)
+  console.log(accesskey)
+  // console.log(connectstring)
+  // console.log(servername)
+  // console.log(sqlusername)
+  // console.log(sqlpass)
+  // console.log(dbname)
+  // console.log(databricksname)
+  // console.log(accesstoken)
+  // console.log(workspaceurl)
+  // console.log(powerbiname)
+  // console.log(powerbiadmin)
+  // console.log(keyvaultname)
+  // console.log(subid)
+  // console.log(tenid)
+  // console.log(clientid)
+  // console.log(clientsecret)
+  // console.log(resourcegroup)
+  // console.log(tablename)
+  // console.log(keyvaultlocation)
+  console.log(rglocation)
+  $.ajax({
+    url: 'https://supplychain-ui.azurewebsites.net/testpy?appservicename='+appservicename+'&appurl='+appurl+'&datafactoryname='+datafactoryname+'&accountname='+accountname+'&accesskey='+accesskey+'&connectstring='+connectstring+'&servername='+servername+'&sqlusername='+sqlusername+'&sqlpass='+sqlpass+'&dbname='+dbname+'&databricksname='+databricksname+'&accesstoken='+accesstoken+'&workspaceurl='+workspaceurl+'&powerbiname='+powerbiname+'&powerbiadmin='+powerbiadmin+'&keyvaultname='+keyvaultname+'&subid='+subid+'&tenid='+tenid+'&clientid='+clientid+'&clientsecret='+clientsecret+'&resourcegroup='+resourcegroup+'&sqlcon='+sqlcon+'&dflocation='+dflocation+'&azurefunction='+azurefunction+'&tablename='+tablename+'&keyvaultlocation='+keyvaultlocation+'&rglocation='+rglocation,
+    method: "GET",
+    success: function(data) {
+      console.log(this.url)
+      console.log(data)
+    }
+
+  });
+
+};
+</script>
+
+     <!-- Include jQuery (required) and the JS -->
+     <script src="../static/v4/docs/assets/js/chart.js"></script>
+     <script src="../static/v4/docs/assets/js/tablesorter.min.js"></script>
+     <script src="../static/v4/docs/assets/js/tether.min.js"></script>
+     <script src="../static/v4/docs/assets/js/chart.js"></script>
+     <script src="../static/v4/docs/assets/js/toolkit.js"></script>
+     <script src="../static/v4/docs/assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+  </body>
+
+
+
+</html>
