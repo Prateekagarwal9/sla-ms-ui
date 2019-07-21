@@ -217,7 +217,7 @@ try:
         print(obj.deploy("KeyVaultDeployment.json","KeyVaultParameters.json"))
         blob_client.delete_container("marketplace")
         import subprocess
-        subprocess.getoutput("python3 test324.py {} {}".format(workspaceurl,accesstoken))
+        subprocess.getoutput("python3 prateek/test324.py {} {}".format(workspaceurl,accesstoken))
         return "rec"
         # return "Modified on: "+str(resp.last_modified)
 
